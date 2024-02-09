@@ -2,7 +2,7 @@
 import pandas as pd
 import csv
 import os
-import mysql.connector
+
 
 # check to delete files
 file_to_delete = r'Data/all_data.csv'
@@ -22,4 +22,3 @@ df_csv_files = pd.concat(
 df_csv_files.to_csv(r'Data/all_data.csv', index=False)
 #print result
 print(df_csv_files)
-
